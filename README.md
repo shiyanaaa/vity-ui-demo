@@ -1,5 +1,6 @@
 # vity-ui-demo
 
+<<<<<<< HEAD
 #### 介绍
 vity-ui示例仓库
 
