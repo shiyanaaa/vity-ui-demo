@@ -1,20 +1,22 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 
+const search=ref("")
 </script>
 
 <template>
     <div class="header">
         <div class="logo">
-            <RouterLink to="">
+            <RouterLink to="/">
                 <img src="../assets/img/element-plus-logo.svg" alt="">
             </RouterLink>
         </div>
         <div class="nav">
-            <span class="link">
-                <ViInput prefixIcon="sousuo"></ViInput>
+            <span >
+                <ViInput v-model="search" prefixIcon="sousuo"></ViInput>
             </span>
             <RouterLink to="" class="link">指南</RouterLink>
-            <RouterLink to="" class="link">组件</RouterLink>
+            <RouterLink to="/component" class="link">组件</RouterLink>
             <RouterLink to="" class="link">资源</RouterLink>
             <RouterLink to="" class="link">切换</RouterLink>
             <RouterLink to="" class="link">英汉</RouterLink>
