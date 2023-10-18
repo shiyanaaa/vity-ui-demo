@@ -1,28 +1,49 @@
 <template>
-       <div>
-        <ViMenu :data="data"></ViMenu>
-       </div> 
+  <div style="display: flex;">
+    <ViMenu v-model="menuData" :data="data"></ViMenu>
+    <div style="padding: 15px;">
+        <RouterView></RouterView>
+    </div>
+  </div>
 </template>
-    
-<script setup lang='ts'>
-import {ref} from "vue"
-    const data=ref([
-        {id:1,label:'基础组件',children:[
-            {id:1001,label:"Button 按钮"},
-            {id:1002,label:"Icon 图标"}
-        ]},
-        {id:2,label:'Form 表单组件',children:[
-        {id:2001,label:"Switch 开关"},
-        {id:2001,label:"Input 输入框"},
-        {id:2001,label:"Radio 单选框"},
-        ]},
-        {id:3,label:'Data 数据展示'},
-        {id:4,label:'Navigation 导航'},
-        {id:5,label:'Feedback 反馈组件'},
-        {id:6,label:'Others 其他'},
-    ])
+
+<script setup lang="ts">
+import { ref,onMounted,watch } from 'vue'
+import  { useRoute,useRouter } from 'vue-router';
+const route=useRoute()
+const router=useRouter()
+const menuData=ref('button')
+const data = ref([
+  {
+    index: 1,
+    label: '基础组件',
+    isGroup:true,
+    children: [
+      { index: 'button', label: 'Button 按钮' },
+      { index: 'icon', label: 'Icon 图标' }
+    ]
+  },
+  {
+    index: 2,
+    label: 'Form 表单组件',
+    isGroup:true,
+    children: [
+      { index: 'switch', label: 'Switch 开关' },
+      { index: 'input', label: 'Input 输入框' },
+      { index: 'radio', label: 'Radio 单选框' }
+    ]
+  },
+  { index: 3, label: 'Data 数据展示',isGroup:true, },
+  { index: 4, label: 'Navigation 导航',isGroup:true, },
+  { index: 5, label: 'Feedback 反馈组件',isGroup:true, },
+  { index: 6, label: 'Others 其他',isGroup:true, }
+])
+watch(menuData,(newValue)=>{
+    router.push(newValue)
+})
+onMounted(()=>{
+    menuData.value=route.name as string;
+})
 </script>
-    
-<style>
-    
-</style>
+
+<style></style>

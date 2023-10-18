@@ -8,7 +8,7 @@ const search=ref("")
     <div class="header">
         <div class="logo">
             <RouterLink to="/">
-                <img src="../assets/img/element-plus-logo.svg" alt="">
+                <img src="../assets/img/vity-ui-logo.svg" alt="">
             </RouterLink>
         </div>
         <div class="nav">
