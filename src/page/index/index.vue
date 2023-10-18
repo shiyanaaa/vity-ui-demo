@@ -20,7 +20,7 @@
         </div>
         <div class="footer">
             <p>Copyright © 2023 vity-ui by Chen</p>
-            <p>本中文文档内容版权为 Vue 官方团队及翻译贡献者所有，保留所有权利。</p>
+            <p>本文档内容版权为Chen所有，保留所有权利。</p>
         </div>
     </div>
 </template>
