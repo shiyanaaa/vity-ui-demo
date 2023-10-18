@@ -1,9 +1,10 @@
 <template>
   <div style="display: flex; height: 100%">
-    <div style="height: 100%;padding-left: 300px;"><ViMenu v-model="menuData" :data="data"></ViMenu></div>
+    <div style="height: calc(100vh - 60px);padding-left: 300px;"><ViMenu v-model="menuData" :data="data"></ViMenu></div>
 
-    <div style="padding: 15px;  height: calc(100vh - 60px);width: 100%;overflow-y: scroll;">
-      <RouterView></RouterView>
+    <div style="padding: 15px;  height: calc(100vh - 60px);width: 100%;overflow-y: auto;">
+      <div style="padding-right: 300px;"><RouterView></RouterView></div>
+      
     </div>
   </div>
 </template>
