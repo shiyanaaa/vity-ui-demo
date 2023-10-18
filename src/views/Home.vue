@@ -7,4 +7,9 @@
     <RouterView></RouterView>
   </div>
 </template>
+<style scoped lang="scss">
+.home{
+  max-height: 100%;
+}
+</style>
 

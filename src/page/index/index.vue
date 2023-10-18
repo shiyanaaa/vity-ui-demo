@@ -1,5 +1,5 @@
 <template>
-        <div>123</div>
+        <div style="padding:var(--main-padding);">123</div>
 </template>
     
 <script setup lang='ts'>

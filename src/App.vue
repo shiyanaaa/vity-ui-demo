@@ -4,11 +4,11 @@ import Header from './components/Header.vue';
 </script>
 
 <template>
-  <ViContainer>
+  <ViContainer style="height: 100vh;">
     <ViHeader>
       <Header ></Header>
     </ViHeader>
-    <ViMain style="padding:var(--main-padding);">
+    <ViMain >
       <RouterView />
     </ViMain>
   </ViContainer>
