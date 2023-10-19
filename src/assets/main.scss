@@ -24,13 +24,17 @@ a {
   padding: 15px;
   h1 {
     font-size: 2em;
+    margin-top: 1em;
+  }
+  h2 {
+    margin-top: 1em;
   }
   p {
     margin: 1rem 0;
   }
   .item {
     & > * {
-      margin-right: 5px;
+      margin-right: 10px;
     }
   }
 }

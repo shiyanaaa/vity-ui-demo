@@ -11,6 +11,23 @@
             <ViSelect size="large" v-model="value" :options="options"></ViSelect>
         </div>
     </div>
+    <h2>有禁用选项</h2>
+    <p>在 option 中，设定 disabled 值为 true，即可禁用该选项</p>
+    <div class="example">
+        <div class="item">
+            <ViSelect size="small" v-model="value" :options="options2"></ViSelect>
+            <ViSelect size="default" v-model="value" :options="options2"></ViSelect>
+            <ViSelect size="large" v-model="value" :options="options2"></ViSelect>
+        </div>
+    </div>
+    <h2>禁用状态</h2>
+    <p>禁用整个选择器组件</p>
+    <p>为 vi-select 设置 disabled属性，则整个选择器不可用。</p>
+    <div class="example">
+        <div class="item">
+            <ViSelect disabled  v-model="value" :options="options2"></ViSelect>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -19,6 +36,11 @@ import {ref} from "vue"
 const value=ref()
 const options=[
     {label:'测试1',value:'1'},
+    {label:'测试2',value:'2'},
+    {label:'测试3',value:'3'},
+]
+const options2=[
+    {label:'测试1',value:'1',disabled:true},
     {label:'测试2',value:'2'},
     {label:'测试3',value:'3'},
 ]
