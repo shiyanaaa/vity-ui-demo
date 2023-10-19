@@ -39,9 +39,5 @@ const value2 = ref(true)
 </script>
 
 <style lang="scss" scoped>
-.item {
-  & > * {
-    margin-right: 5px;
-  }
-}
+
 </style>
