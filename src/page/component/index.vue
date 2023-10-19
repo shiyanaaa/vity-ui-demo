@@ -32,7 +32,8 @@ const data = ref([
     children: [
       { index: 'switch', label: 'Switch 开关' },
       { index: 'input', label: 'Input 输入框' },
-      { index: 'radio', label: 'Radio 单选框' }
+      { index: 'radio', label: 'Radio 单选框' },
+      { index: 'select', label: 'Select 选择框' },
     ]
   },
   { index: 3, label: 'Data 数据展示', isGroup: true },

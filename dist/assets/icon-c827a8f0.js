@@ -1,0 +1,1 @@
+import{h as o,o as s,c,g as e}from"./index-b79b9e44.js";const t={},n={class:"demo"},_=e("h1",null,"Icon 图标",-1),a=e("p",null,"Vity UI 提供了一套常用的图标集合。",-1),l=e("div",{class:"example"},null,-1),d=[_,a,l];function i(r,h){return s(),c("div",n,d)}const m=o(t,[["render",i]]);export{m as default};

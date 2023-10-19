@@ -2,7 +2,7 @@
     <div class="index">
         <img class="index-logo" src="../../assets/img/vity-ui-logo.svg" />
         <h1 class="title">Vity UI</h1>
-        <ViButton color="#42b883" size="large">快速上手<ViIcon name="zhixiangyou"></ViIcon>
+        <ViButton color="#42b883" size="large" @click="goPage">快速上手<ViIcon name="zhixiangyou"></ViIcon>
         </ViButton>
         <div class="container">
             <div class="item">
@@ -26,7 +26,11 @@
 </template>
     
 <script setup lang='ts'>
-
+import { useRouter } from 'vue-router';
+const router=useRouter()
+const goPage=()=>{
+    router.push("/component")
+}
 
 </script>
     

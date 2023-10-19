@@ -46,8 +46,9 @@ const search=ref("")
     .nav {
         display: flex;
         align-items: center;
-
+        flex-shrink:0;
         .link {
+            flex-shrink:0;
             padding: 0 10px;
             &:hover{
                 color: var(--vi-color-primary);
