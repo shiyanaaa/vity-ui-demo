@@ -15,9 +15,6 @@ const btn: Array<Btn> = [
   { type: 'error' }
 ]
 const colorList: Array<string> = ['#996699', '#003399', '#9933FF', '#FF99CC', '#0099CC', '#FF0033']
-const click = () => {
-  console.log('click')
-}
 const loading = ref(false)
 </script>
 

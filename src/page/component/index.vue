@@ -37,7 +37,9 @@ const data = ref([
       { index: 'select', label: 'Select 选择框' }
     ]
   },
-  { index: 3, label: 'Data 数据展示', isGroup: true },
+  { index: 3, label: 'Data 数据展示', isGroup: true,children:[
+  { index: 'tag', label: 'Tag 标签' }
+  ] },
   { index: 4, label: 'Navigation 导航', isGroup: true },
   {
     index: 5,

@@ -54,6 +54,11 @@ const router = createRouter({
               path: 'message',
               name: 'message',
               component: () => import('../page/component/message.vue')
+            },
+            {
+              path: 'tag',
+              name: 'tag',
+              component: () => import('../page/component/tag.vue')
             }
           ]
         }
