@@ -49,6 +49,11 @@ const router = createRouter({
               path: 'select',
               name: 'select',
               component: () => import('../page/component/select.vue')
+            },
+            {
+              path: 'message',
+              name: 'message',
+              component: () => import('../page/component/message.vue')
             }
           ]
         }

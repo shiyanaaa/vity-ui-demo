@@ -1,10 +1,11 @@
 <template>
   <div style="display: flex; height: 100%">
-    <div style="height: calc(100vh - 60px);padding-left: 300px;"><ViMenu v-model="menuData" :data="data"></ViMenu></div>
+    <div style="height: calc(100vh - 60px); padding-left: 300px">
+      <ViMenu v-model="menuData" :data="data"></ViMenu>
+    </div>
 
-    <div style="padding: 15px;  height: calc(100vh - 60px);width: 100%;overflow-y: auto;">
-      <div style="padding-right: 300px;"><RouterView></RouterView></div>
-      
+    <div style="padding: 15px; height: calc(100vh - 60px); width: 100%; overflow-y: auto">
+      <div style="padding-right: 300px"><RouterView></RouterView></div>
     </div>
   </div>
 </template>
@@ -33,12 +34,17 @@ const data = ref([
       { index: 'switch', label: 'Switch 开关' },
       { index: 'input', label: 'Input 输入框' },
       { index: 'radio', label: 'Radio 单选框' },
-      { index: 'select', label: 'Select 选择框' },
+      { index: 'select', label: 'Select 选择框' }
     ]
   },
   { index: 3, label: 'Data 数据展示', isGroup: true },
   { index: 4, label: 'Navigation 导航', isGroup: true },
-  { index: 5, label: 'Feedback 反馈组件', isGroup: true },
+  {
+    index: 5,
+    label: 'Feedback 反馈组件',
+    isGroup: true,
+    children: [{ index: 'message', label: 'Message 消息提示' }]
+  },
   { index: 6, label: 'Others 其他', isGroup: true }
 ])
 watch(menuData, (newValue) => {
