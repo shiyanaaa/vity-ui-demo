@@ -1,5 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+const routerFile=import.meta.glob("../page/component/*.vue")
+interface routeType{
+  path:string,
+  name:string,
+  component:any
+}
+let children:routeType[] =[]
+Object.keys(routerFile).forEach(key=>{
+  const routeComponent = routerFile[key];
+  const routeName = key.match(/\.\.\/page\/component\/(.*?).vue$/);
+  if(routeName){
+    children.push({
+      path: `/component/${routeName[1].toLowerCase()}`,
+      name: routeName[1] as string,
+      component: routeComponent
+    })
+  }
+})
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,50 +35,9 @@ const router = createRouter({
         {
           path: '/component',
           name: 'component',
-          component: () => import('../page/component/index.vue'),
+          component: () => import('../page/index/component.vue'),
           redirect: '/component/button',
-          children: [
-            {
-              path: 'button',
-              name: 'button',
-              component: () => import('../page/component/button.vue')
-            },
-            {
-              path: 'icon',
-              name: 'icon',
-              component: () => import('../page/component/icon.vue')
-            },
-            {
-              path: 'switch',
-              name: 'switch',
-              component: () => import('../page/component/switch.vue')
-            },
-            {
-              path: 'input',
-              name: 'input',
-              component: () => import('../page/component/input.vue')
-            },
-            {
-              path: 'radio',
-              name: 'radio',
-              component: () => import('../page/component/radio.vue')
-            },
-            {
-              path: 'select',
-              name: 'select',
-              component: () => import('../page/component/select.vue')
-            },
-            {
-              path: 'message',
-              name: 'message',
-              component: () => import('../page/component/message.vue')
-            },
-            {
-              path: 'tag',
-              name: 'tag',
-              component: () => import('../page/component/tag.vue')
-            }
-          ]
+          children:children
         }
       ]
     }
