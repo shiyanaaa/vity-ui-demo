@@ -1,11 +1,11 @@
 <template>
     <div style="display: flex; height: 100%">
-      <div style="height: calc(100vh - 60px); padding-left: 300px">
+      <div style="height: calc(100vh - 60px); padding-left: var(--main-padding)">
         <ViMenu rightBorder v-model="menuData" :data="data"></ViMenu>
       </div>
   
       <div style="padding: 15px; height: calc(100vh - 60px); width: 100%; overflow-y: auto">
-        <div style="padding-right: 300px"><RouterView></RouterView></div>
+        <div style="padding-right: var(--main-padding)"><RouterView></RouterView></div>
       </div>
     </div>
   </template>

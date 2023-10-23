@@ -27,7 +27,7 @@ const search=ref("")
 <style scoped lang="scss">
 .header {
     display: flex;
-    padding: var(--main-padding);
+    padding: 0 var(--main-padding);
     height: 100%;
     justify-content: space-between;
     align-items: center;

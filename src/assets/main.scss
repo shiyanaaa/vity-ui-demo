@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 :root {
-  --main-padding: 0 300px;
+  --main-padding: 300px;
+  @media screen and (max-width: 1920px) { 
+    --main-padding: 300px;
+  }
+  @media screen and (max-width: 1700px) { 
+    --main-padding: 150px;
+  }
+  @media screen and (max-width: 1300px) { 
+    --main-padding: 75px;
+  }
+  @media screen and (max-width: 1100px) { 
+    --main-padding: 0;
+  }
 }
 a {
   color: #000;
   text-decoration: none;
 }
+
 .example {
   width: 100%;
   border: 1px solid #ccc;
