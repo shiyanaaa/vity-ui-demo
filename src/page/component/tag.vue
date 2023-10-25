@@ -29,11 +29,22 @@
             <ViTag plain v-for="item in tagType" :type="item">{{ item }}</ViTag>
         </div>
     </div>
+    <h2>自定义颜色</h2>
+    <p>设置 color 可以显示不同颜色</p>
+    <div class="example">
+        <div>
+            <ViTag v-for="item in colorList" :color="item">{{ item }}</ViTag>
+        </div>
+        <div>
+            <ViTag plain v-for="item in colorList" :color="item">{{ item }}</ViTag>
+        </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const tagType=['primary','warning','error','success','info']
+const colorList: Array<string> = ['#996699', '#003399', '#9933FF', '#FF99CC', '#0099CC', '#FF0033']
 </script>
 
 <style></style>

@@ -54,6 +54,20 @@ const loading = ref(false)
         }}</ViButton>
       </div>
     </div>
+    <h2>文字按钮</h2>
+    <p>你可以使用 link 属性来定义文字按钮。</p>
+    <div class="example">
+      <div>
+        <ViButton link v-for="item in btn" :key="item.type" :type="item.type">{{
+          item.type
+        }}</ViButton>
+      </div>
+      <div>
+        <ViButton disabled link v-for="item in btn" :key="item.type" :type="item.type">{{
+          item.type
+        }}</ViButton>
+      </div>
+    </div>
     <h2>图标按钮</h2>
     <p>使用图标为按钮添加更多的含义。 你也可以单独使用图标不添加文字来节省显示区域占用。</p>
     <p>
@@ -143,15 +157,17 @@ const loading = ref(false)
     <p>使用 size 属性额外配置尺寸，可使用 large和small两种值。</p>
     <div class="example">
       <div>
-        <ViButton size="small" v-for="item in btn" :key="item.type" :type="item.type">{{ item.type }}</ViButton>
-      </div>
-      <div>
-        <ViButton size="default"  v-for="item in btn" :key="item.type" :type="item.type">{{
+        <ViButton size="small" v-for="item in btn" :key="item.type" :type="item.type">{{
           item.type
         }}</ViButton>
       </div>
       <div>
-        <ViButton size="large"  v-for="item in btn" :key="item.type" :type="item.type">{{
+        <ViButton size="default" v-for="item in btn" :key="item.type" :type="item.type">{{
+          item.type
+        }}</ViButton>
+      </div>
+      <div>
+        <ViButton size="large" v-for="item in btn" :key="item.type" :type="item.type">{{
           item.type
         }}</ViButton>
       </div>
@@ -161,32 +177,15 @@ const loading = ref(false)
     <p>我们将自动计算按钮处于 hover 和 active 状态时的颜色。</p>
     <div class="example">
       <div>
-        <ViButton
-          :color="item"
-          v-for="item in colorList"
-          :key="item"
-        >
-          {{ item }}</ViButton
-        >
+        <ViButton :color="item" v-for="item in colorList" :key="item"> {{ item }}</ViButton>
       </div>
       <div>
-        <ViButton
-          :color="item"
-          v-for="item in colorList"
-          plain
-          :key="item"
-          >{{ item }}</ViButton
-        >
+        <ViButton :color="item" v-for="item in colorList" plain :key="item">{{ item }}</ViButton>
       </div>
       <div>
-        <ViButton
-          disabled
-          :color="item"
-          v-for="item in colorList"
-          plain
-          :key="item"
-          >{{ item }}</ViButton
-        >
+        <ViButton disabled :color="item" v-for="item in colorList" plain :key="item">{{
+          item
+        }}</ViButton>
       </div>
     </div>
   </div>
