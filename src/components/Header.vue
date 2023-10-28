@@ -15,7 +15,7 @@ const search=ref("")
             <span >
                 <ViInput v-model="search" prefixIcon="sousuo"></ViInput>
             </span>
-            <RouterLink to="" class="link">指南</RouterLink>
+            <RouterLink to="/guide" class="link">指南</RouterLink>
             <RouterLink to="/component" class="link">组件</RouterLink>
             <RouterLink to="" class="link">资源</RouterLink>
             <RouterLink to="" class="link">切换</RouterLink>

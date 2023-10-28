@@ -29,7 +29,7 @@
 import { useRouter } from 'vue-router';
 const router=useRouter()
 const goPage=()=>{
-    router.push("/component")
+    router.push("/guide")
 }
 
 </script>
