@@ -11,15 +11,15 @@
     <p>ViMain：主要区域容器。</p>
     <p>ViFooter：底栏容器。</p>
     <h2>常见页面布局</h2>
-    <div class="example">
+    <codeDemo code="">
       <div class="item" style="height: 200px; width: 100%">
         <ViContainer>
           <ViHeader>Header</ViHeader>
           <ViMain> Main</ViMain>
         </ViContainer>
       </div>
-    </div>
-    <div class="example">
+    </codeDemo>
+    <codeDemo code="">
       <div class="item" style="height: 200px; width: 100%">
         <ViContainer>
           <ViHeader>Header</ViHeader>
@@ -27,16 +27,16 @@
           <ViFooter> Footer</ViFooter>
         </ViContainer>
       </div>
-    </div>
-    <div class="example">
+    </codeDemo>
+    <codeDemo code="">
       <div class="item" style="height: 200px; width: 100%">
         <ViContainer>
           <ViAside>Aside</ViAside>
           <ViMain> Main</ViMain>
         </ViContainer>
       </div>
-    </div>
-    <div class="example">
+    </codeDemo>
+    <codeDemo code="">
       <div class="item" style="height: 200px; width: 100%">
         <ViContainer>
           <ViHeader>Header</ViHeader>
@@ -46,8 +46,8 @@
           </ViContainer>
         </ViContainer>
       </div>
-    </div>
-    <div class="example">
+    </codeDemo>
+    <codeDemo code="">
       <div class="item" style="height: 200px; width: 100%">
         <ViContainer>
           <ViHeader>Header</ViHeader>
@@ -60,8 +60,8 @@
           </ViContainer>
         </ViContainer>
       </div>
-    </div>
-    <div class="example">
+    </codeDemo>
+    <codeDemo code="">
       <div class="item" style="height: 200px; width: 100%">
         <ViContainer>
           <ViAside>Aside</ViAside>
@@ -69,12 +69,11 @@
           <ViContainer>
             <ViHeader>Header</ViHeader>
             <ViMain> Main</ViMain>
-            
           </ViContainer>
         </ViContainer>
       </div>
-    </div>
-    <div class="example">
+    </codeDemo>
+    <codeDemo code="">
       <div class="item" style="height: 200px; width: 100%">
         <ViContainer>
           <ViAside>Aside</ViAside>
@@ -85,11 +84,13 @@
           </ViContainer>
         </ViContainer>
       </div>
-    </div>
+    </codeDemo>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import codeDemo from '@/components/codeDemo.vue'
+</script>
 
 <style lang="scss" scoped>
 @mixin center {

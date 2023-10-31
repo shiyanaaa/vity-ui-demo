@@ -4,34 +4,35 @@
     <p>当选项过多时，使用下拉菜单展示并选择内容。</p>
     <h2>基础用法</h2>
     <p>适用广泛的基础单选 v-model 的值为当前被选中的 options 的 value 属性值</p>
-    <div class="example">
+    <codeDemo code="">
         <div class="item">
             <ViSelect size="small" v-model="value" :options="options"></ViSelect>
             <ViSelect size="default" v-model="value" :options="options"></ViSelect>
             <ViSelect size="large" v-model="value" :options="options"></ViSelect>
         </div>
-    </div>
+    </codeDemo>
     <h2>有禁用选项</h2>
     <p>在 option 中，设定 disabled 值为 true，即可禁用该选项</p>
-    <div class="example">
+    <codeDemo code="">
         <div class="item">
             <ViSelect size="small" v-model="value" :options="options2"></ViSelect>
             <ViSelect size="default" v-model="value" :options="options2"></ViSelect>
             <ViSelect size="large" v-model="value" :options="options2"></ViSelect>
         </div>
-    </div>
+    </codeDemo>
     <h2>禁用状态</h2>
     <p>禁用整个选择器组件</p>
     <p>为 vi-select 设置 disabled属性，则整个选择器不可用。</p>
-    <div class="example">
+    <codeDemo code="">
         <div class="item">
             <ViSelect disabled  v-model="value" :options="options2"></ViSelect>
         </div>
-    </div>
+    </codeDemo>
   </div>
 </template>
 
 <script setup lang="ts">
+import codeDemo from '@/components/codeDemo.vue'
 import {ref} from "vue"
 const value=ref()
 const options=[
