@@ -29,17 +29,16 @@ a {
   text-decoration: none;
 }
 
-// .example {
-//   width: 100%;
-//   border: 1px solid #ccc;
-//   padding: 24px;
-//   border-radius: 4px;
-//   margin: 10px 0;
-
-//   &>div:not(:last-child) {
-//     margin-bottom: 20px;
-//   }
-// }
+pre > code {
+  font-family: "JetBrains Mono", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+}
 
 .demo {
   padding: 15px;

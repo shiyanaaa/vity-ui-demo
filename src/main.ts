@@ -1,5 +1,6 @@
 import './assets/main.scss'
 import HljsVuePlugin from '@highlightjs/vue-plugin'
+// import 'highlight.js/styles/atom-one-light.css'
 import 'highlight.js/styles/atom-one-light.css'
 import 'highlight.js/lib/common'
 

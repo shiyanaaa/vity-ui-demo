@@ -28,12 +28,12 @@ const app = createApp(App)
 app.use(VityUi)
 app.mount('#app')`
 const codeHtml2=`<template>
-<el-button>我是 ElButton</el-button>
+<vi-button>我是 ViButton</vi-button>
 </template>
 <script>
-  import { ElButton } from 'element-plus'
+  import { ViButton } from ''vity-ui'
   export default {
-    components: { ElButton },
+    components: { ViButton },
   }
 <\/script>
 `

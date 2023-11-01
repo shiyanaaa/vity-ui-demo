@@ -72,6 +72,7 @@ const showCode = ref(false)
     grid-template-rows: 0fr;
     overflow: hidden;
     transition: all .5s;
+    overflow-x: auto;
     &.is-show{
       grid-template-rows: 1fr;
     }
