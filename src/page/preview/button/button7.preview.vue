@@ -11,14 +11,10 @@
     <ViButton :color="item" v-for="item in colorList" plain :key="item">{{ item }}</ViButton>
   </div>
   <div>
-    <ViButton disabled :color="item" v-for="item in colorList" plain :key="item">{{
-      item
-    }}</ViButton>
+    <ViButton disabled :color="item" v-for="item in colorList" plain :key="item">{{ item }}</ViButton>
   </div>
 </template>
 
 <script setup lang="ts">
-const colorList = ['#996699', '#003399', '#9933FF', '#FF99CC', '#0099CC', '#FF0033'];
+const colorList = ['#996699', '#003399', '#9933FF', '#FF99CC', '#0099CC', '#FF0033']
 </script>
-
-<style></style>

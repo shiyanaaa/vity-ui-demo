@@ -5,33 +5,22 @@
 </preview>
 <template>
   <div>
-        <ViButton size="small" v-for="item in btn" :key="item.type" :type="item.type">{{
-          item.type
+        <ViButton size="small" v-for="item in btn" :key="item" :type="item">{{
+          item
         }}</ViButton>
       </div>
       <div>
-        <ViButton size="default" v-for="item in btn" :key="item.type" :type="item.type">{{
-          item.type
+        <ViButton size="default" v-for="item in btn" :key="item" :type="item">{{
+          item
         }}</ViButton>
       </div>
       <div>
-        <ViButton size="large" v-for="item in btn" :key="item.type" :type="item.type">{{item.type}}</ViButton>
+        <ViButton size="large" v-for="item in btn" :key="item" :type="item">{{item}}</ViButton>
       </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-interface Btn {
-  type: string
-}
-const btn = [
-  { type: 'primary' },
-  { type: 'warning' },
-  { type: 'success' },
-  { type: 'info' },
-  { type: 'error' }
-]
+const btn = ['primary', 'warning', 'success', 'info', 'error']
 const loading = ref(false)
 </script>
-
-<style></style>

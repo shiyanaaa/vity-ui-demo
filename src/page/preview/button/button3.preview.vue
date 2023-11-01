@@ -4,26 +4,13 @@
 </preview>
 <template>
   <div>
-    <ViButton link v-for="item in btn" :key="item.type" :type="item.type">{{ item.type }}</ViButton>
+    <ViButton link v-for="item in btn" :key="item" :type="item">{{ item }}</ViButton>
   </div>
   <div>
-    <ViButton disabled link v-for="item in btn" :key="item.type" :type="item.type">{{
-      item.type
-    }}</ViButton>
+    <ViButton disabled link v-for="item in btn" :key="item" :type="item">{{ item }}</ViButton>
   </div>
 </template>
 
 <script setup lang="ts">
-interface Btn {
-  type: string
-}
-const btn = [
-  { type: 'primary' },
-  { type: 'warning' },
-  { type: 'success' },
-  { type: 'info' },
-  { type: 'error' }
-]
+const btn = ['primary', 'warning', 'success', 'info', 'error']
 </script>
-
-<style></style>

@@ -31,8 +31,6 @@ Object.keys(guideFile).forEach(key=>{
     })
   }
 })
-console.log(guideChildren);
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

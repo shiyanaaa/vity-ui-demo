@@ -7,15 +7,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, type DefineComponent } from 'vue'
+import { computed } from 'vue'
 import codeDemo from './codeDemo.vue'
 interface Props {
   component: any
 }
 const props = defineProps<Props>()
 const html = computed(() => {
-    console.log(props.component);
-    
   return props.component.__sourceCode
 })
 </script>

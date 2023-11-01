@@ -8,46 +8,28 @@
 </preview>
 <template>
   <div>
-    <ViButton square icon="xihuan" v-for="item in btn" :key="item.type" :type="item.type" />
+    <ViButton square icon="xihuan" v-for="item in btn" :key="item" :type="item" />
   </div>
   <div>
-    <ViButton circle icon="shoucang" v-for="item in btn" :key="item.type" :type="item.type" />
+    <ViButton circle icon="shoucang" v-for="item in btn" :key="item" :type="item" />
   </div>
   <div>
-    <ViButton
-      disabled
-      circle
-      icon="suoding"
-      v-for="item in btn"
-      :key="item.type"
-      :type="item.type"
-    />
+    <ViButton disabled circle icon="suoding" v-for="item in btn" :key="item" :type="item" />
   </div>
   <div>
-    <ViButton square icon="xihuan" plain v-for="item in btn" :key="item.type" :type="item.type" />
+    <ViButton square icon="xihuan" plain v-for="item in btn" :key="item" :type="item" />
   </div>
   <div>
-    <ViButton circle icon="xihuan" plain v-for="item in btn" :key="item.type" :type="item.type" />
+    <ViButton circle icon="xihuan" plain v-for="item in btn" :key="item" :type="item" />
   </div>
   <div>
-    <ViButton v-for="item in btn" :key="item.type" :type="item.type" icon="weizhi"></ViButton>
+    <ViButton v-for="item in btn" :key="item" :type="item" icon="weizhi"></ViButton>
   </div>
   <div>
-    <ViButton round v-for="item in btn" :key="item.type" :type="item.type" icon="weizhi"></ViButton>
+    <ViButton round v-for="item in btn" :key="item" :type="item" icon="weizhi"></ViButton>
   </div>
 </template>
 
 <script setup lang="ts">
-interface Btn {
-  type: string
-}
-const btn = [
-  { type: 'primary' },
-  { type: 'warning' },
-  { type: 'success' },
-  { type: 'info' },
-  { type: 'error' }
-]
+const btn = ['primary', 'warning', 'success', 'info', 'error']
 </script>
-
-<style></style>
