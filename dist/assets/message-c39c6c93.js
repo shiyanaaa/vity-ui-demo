@@ -1,4 +1,4 @@
-import{d as p,r as l,c as i,e as d,w as g,j as f,o as r,f as v,F as y,b as h,t as C,g as w,h as B,m as b,a as m,i as M}from"./index-f790aab3.js";import{_ as x}from"./PreView.vue_vue_type_script_setup_true_lang-4b2a4df7.js";const $={class:"item"},k=p({__name:"message1.preview",setup(e){const s=()=>{f.ViMessage.message("提示消息")};return(o,t)=>{const n=l("ViButton");return r(),i("div",$,[d(n,{onClick:s,type:"primary"},{default:g(()=>[v("显示消息")]),_:1})])}}});function _(e){e.__sourceCode=`<template>\r
+import{d as p,r as l,c as i,e as d,w as g,j as f,o as r,f as v,F as y,b as h,t as C,g as w,h as B,m as b,a as m,i as M}from"./index-59abec23.js";import{_ as x}from"./PreView.vue_vue_type_script_setup_true_lang-c99e2531.js";const $={class:"item"},k=p({__name:"message1.preview",setup(e){const s=()=>{f.ViMessage.message("提示消息")};return(o,t)=>{const n=l("ViButton");return r(),i("div",$,[d(n,{onClick:s,type:"primary"},{default:g(()=>[v("显示消息")]),_:1})])}}});function _(e){e.__sourceCode=`<template>\r
   <div class="item">\r
     <ViButton @click="btnClick" type="primary">显示消息</ViButton>\r
   </div>\r
