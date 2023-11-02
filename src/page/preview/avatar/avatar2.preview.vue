@@ -4,7 +4,7 @@
 </preview>
 <template>
   <div class="item">
-    <ViAvatar shape="square" src="/vity-ui-demo/imgs/avatar.jpg"></ViAvatar>
+    <ViAvatar shape="square" src="../imgs/avatar.jpg"></ViAvatar>
     <ViAvatar shape="square" size="50"><ViIcon size="40" name="yonghu" /></ViAvatar>
     <ViAvatar shape="square" size="50">user</ViAvatar>
   </div>
