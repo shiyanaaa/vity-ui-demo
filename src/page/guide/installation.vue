@@ -6,7 +6,7 @@
     <p>由于 Vue 3 不再支持 IE11，Vity UI 也不再支持 IE 浏览器。</p>
     <h3>版本</h3>
     <p>Vity UI 目前还处于快速开发迭代中。</p>
-    <p>当前最新版本：<strong>{{ version }}</strong></p>
+    <h4>当前最新版本：<strong>{{ version }}</strong></h4>
     <h2>使用包管理器</h2>
     <p>我们建议您使用包管理器（如 NPM、Yarn 或 pnpm）安装 Vity UI，然后您就可以使用打包工具，例如 Vite 或 webpack。</p>
     <div class="code"><highlightjs autodetect :code="codeHtml1" /></div>
