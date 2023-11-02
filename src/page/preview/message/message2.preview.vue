@@ -13,6 +13,9 @@
 import { ViMessage } from 'vity-ui'
 const typeList = ['info', 'primary', 'warning', 'success', 'error']
 const btnClick = (type: string) => {
-  ViMessage[type](`这是${type}提示消息`)
+  ViMessage.message({
+      type,
+      message: '这是提示消息'
+    })
 }
 </script>
