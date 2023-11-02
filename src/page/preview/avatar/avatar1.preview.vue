@@ -4,10 +4,10 @@
 </preview>
 <template>
   <div class="item">
-    <ViAvatar shape="square" src="/src/assets/img/avatar.jpg" v-for="item in sizes" :size="item"></ViAvatar>
+    <ViAvatar shape="square" src="/imgs/avatar.jpg" v-for="item in sizes" :size="item"></ViAvatar>
   </div>
   <div class="item">
-    <ViAvatar shape="circle" src="/src/assets/img/avatar.jpg" v-for="item in sizes" :size="item"></ViAvatar>
+    <ViAvatar shape="circle" src="/imgs/avatar.jpg" v-for="item in sizes" :size="item"></ViAvatar>
   </div>
 </template>
 

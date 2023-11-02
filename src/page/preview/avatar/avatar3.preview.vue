@@ -4,7 +4,7 @@
 </preview>
 <template>
   <div class="item">
-    <ViAvatar shape="circle" @error="onError" src="/src/assets/img/error.jpg">
+    <ViAvatar shape="circle" @error="onError" src="/imgs/error.jpg">
       <ViIcon size="30" name="tupian" />
     </ViAvatar>
   </div>
