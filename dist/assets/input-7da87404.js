@@ -1,4 +1,4 @@
-import{d as m,g as c,r as d,i as w,o as a,c as s,a as u,e as i,F as v,w as x,h as b,m as k,b as C}from"./index-59abec23.js";import{_ as y}from"./PreView.vue_vue_type_script_setup_true_lang-c99e2531.js";const P=m({__name:"input1.preview",setup(o){const n=c("");return(p,e)=>{const t=d("ViInput");return a(),w(t,{modelValue:n.value,"onUpdate:modelValue":e[0]||(e[0]=l=>n.value=l),placeholder:"Please input"},null,8,["modelValue"])}}});function V(o){o.__sourceCode=`<template>\r
+import{d as m,g as c,r as d,i as w,o as a,c as s,a as u,e as i,F as v,w as x,h as b,m as k,b as C}from"./index-5b2f987f.js";import{_ as y}from"./PreView.vue_vue_type_script_setup_true_lang-6d310631.js";const P=m({__name:"input1.preview",setup(o){const n=c("");return(p,e)=>{const t=d("ViInput");return a(),w(t,{modelValue:n.value,"onUpdate:modelValue":e[0]||(e[0]=l=>n.value=l),placeholder:"Please input"},null,8,["modelValue"])}}});function V(o){o.__sourceCode=`<template>\r
   <ViInput v-model="text1" placeholder="Please input"></ViInput>\r
 </template>\r
 \r
