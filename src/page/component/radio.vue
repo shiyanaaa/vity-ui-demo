@@ -1,28 +1,29 @@
+<script setup lang="ts">
+import { onMounted, ref,markRaw  } from 'vue'
+import PreView from '@/components/PreView.vue'
+const components = ref<any>([])
+onMounted(async () => {
+  const componentContext = await import.meta.glob('../preview/radio/*.vue',{eager:true,import: 'default',})
+  for (const componentPath in componentContext) {
+    const componentName = componentPath;
+    const componentModule = componentContext[componentPath] as object
+
+    // Push components to the array for rendering
+    components.value.push({
+      name: componentName,
+      component: markRaw(componentModule)
+    })
+  }
+})
+</script>
+
 <template>
   <div class="demo">
     <h1>Radio 单选框</h1>
     <p>在一组备选项中进行单选</p>
-    <h2>基础用法</h2>
-    <p>单选框不应该有太多的可选项， 如果你有很多的可选项你应该使用选择框而不是单选框。</p>
-    <p>
-      要使用 Radio 组件，只需要设置v-model绑定变量， 选中意味着变量的值为相应 Radio label属性的值，
-      label可以是String、Number 或 Boolean。
-    </p>
-    <codeDemo code="">
-      <div class="item">
-        <ViRadioGroup v-model="radio">
-          <ViRadio :label="1">Options 1</ViRadio>
-          <ViRadio :label="2">Options 2</ViRadio>
-        </ViRadioGroup>
-      </div>
-    </codeDemo>
+    <PreView v-for="item in components" :key="item.name" :component="item.component" />
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue'
-import codeDemo from '@/components/codeDemo.vue'
-const radio = ref(1)
-</script>
+<style scoped lang="scss"></style>
 
-<style></style>
