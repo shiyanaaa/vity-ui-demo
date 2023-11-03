@@ -1,4 +1,4 @@
-import{d,r as f,c as i,F as s,b as u,o as r,e as c,w as p,f as l,t as g,_ as x,a as m,g as k,h as $,m as b,i as z}from"./index-781cca63.js";import{_ as L}from"./PreView.vue_vue_type_script_setup_true_lang-6fae67ac.js";const h=d({__name:"tag1.preview",setup(e){const a=["primary","warning","error","success","info"];return(o,_)=>{const n=f("ViTag");return r(),i("div",null,[(r(),i(s,null,u(a,t=>c(n,{type:t},{default:p(()=>[l(g(t),1)]),_:2},1032,["type"])),64))])}}});function v(e){e.__sourceCode=`<template>\r
+import{d,r as f,c as i,F as s,b as u,o as r,e as c,w as p,f as l,t as g,_ as x,a as m,g as k,h as $,m as b,i as z}from"./index-25e59a09.js";import{_ as L}from"./PreView.vue_vue_type_script_setup_true_lang-18d824b1.js";const h=d({__name:"tag1.preview",setup(e){const a=["primary","warning","error","success","info"];return(o,_)=>{const n=f("ViTag");return r(),i("div",null,[(r(),i(s,null,u(a,t=>c(n,{type:t},{default:p(()=>[l(g(t),1)]),_:2},1032,["type"])),64))])}}});function v(e){e.__sourceCode=`<template>\r
   <div>\r
     <ViTag v-for="item in tagType" :type="item">{{ item }}</ViTag>\r
   </div>\r
