@@ -24,18 +24,24 @@
   }
   // 美化滚动条
   ::-webkit-scrollbar {
-    width: 20px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px rgba($color: #000000, $alpha: 0);
+    border: solid 30px transparent;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
   }
 
   ::-webkit-scrollbar-thumb {
-    border-radius: 12px;
-    border: 6px solid rgba(0, 0, 0, 0);
-    box-shadow: 8px 0 0 #a5adb7 inset;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    box-shadow: 8px 0 0 #4a4a4a inset;
+    box-shadow: inset 0 0 10px 10px rgba($color: #000000, $alpha: .25);
+    border: solid 3px transparent;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
   }
 }
 
